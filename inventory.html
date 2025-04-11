@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+</head>
+<link rel="stylesheet" href="inventory.css">
+
+<body>
+    <div class="top">
+        <div class="title" style="color: #ffffff;">
+          Inventory Management System</div>
+    
+        <div class="search">
+          <input type="text" placeholder="Search here" id="searchI"/>
+          <button id="searchb">Search</button>
+        </div>
+        <div class="search2">
+          <button class="plus">Add Item </button>
+        </div>
+    </div>
+<div>
+    <div class="cntnt1">
+        <p class="cntnt2">Current Inventory</p>
+        <div class="cnt">
+        <p class="fix">Search by:</p>
+        <p class="fix" style="margin-left: 10px;">Sort by:</p>
+        <p class="fix" style="margin-left: 25px;">Sort by Price:</p>
+        </div>
+
+        <div class="option">
+        <select class="option1" id="select1">
+          <option disabled selected>Select Product</option>
+          <option value="one">Chicken</option>
+          <option value="two">Pork</option>
+          <option value="three">Beef</option>
+        </select>
+
+        <select class="option1" id="select2">
+          <option disabled selected>Sort</option>
+          <option value="one">By date</option>
+          <option value="two">By name (A-Z)</option>
+          <option value="three">By type</option>
+        </select>
+
+        <select class="option1" id="select3">
+          <option disabled selected>Price</option>
+          <option value="one">Lowest-Highest</option>
+          <option value="two">Highest-Lowest</option>
+        </select>
+    </div>
+
+    <table style="width:100%">
+        <tr>
+            <th colspan="6" class="headtitle">Product</th>               
+        </tr>
+        <tr>
+            <th>Name of Product:</th>
+            <th>Details:</th>
+            <th>Price:</th>
+            <th>Quantity:</th>
+            <th>Date</th>
+            <th>Edit/Remove</th>
+        </tr>
+        <tr>
+            <td>1. Pork</td>
+            <td>Fresh</td>
+            <td style="text-align:center">100$</td>
+            <td>3</td>
+            <td>3-29-25</td>
+            <td>
+              <button>
+                <p>Edit</p>
+              </button> 
+              <button>
+                <p>Remove</p>
+              </button> 
+            </td>
+        </tr>
+        <tr>
+            <td>2. Chicken</td>
+            <td>Fresh</td>
+            <td style="text-align:center">1000$</td>
+            <td>1</td>
+            <td>3-29-25</td>
+            <td>
+              <button>
+                <p>Edit</p>
+              </button> 
+              <button>
+                <p>Remove</p>
+              </button>          
+            </td>
+        </tr>
+    </table>
+    <div class="copyright">
+      <p>@2025 De Sagun, Yrmand Li R. DCET 1-1</p>
+    </div>
+
+<!--popup-->
+    <div class="modal" id="show">
+      <h2 style="color: #ffcd03;">Add Item</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="form-group">
+        <label for="details">Details</label>
+        <input type="text" id="details" />
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" />
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" />
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" />
+      </div>
+      <div class="form-group">
+        <label for="type">Type</label>
+        <select id="type">
+          <option value="type1">Type 1</option>
+          <option value="type2">Type 2</option>
+        </select>
+      </div>
+      <div class="actions">
+        <button class="butt" id="add">Add</button>
+        <button class="butt" id="cancel">Cancel</button>
+      </div>
+  </div>
+
+
+</div>
+<script src="inventory.js"></script>
+</body>
+</html>
