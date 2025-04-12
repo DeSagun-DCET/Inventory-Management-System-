@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("date").value = "";
     document.getElementById("type").selectedIndex = 0;
 
-    modal.classList.remove("openshow");
+    popup.classList.remove("openshow");
   });
   document.addEventListener("click", (event) => {
     if (event.target.tagName === "P" && event.target.textContent === "Remove") {
